@@ -1,0 +1,99 @@
+
+.container{
+    display: grid;
+    grid-template-areas: "header header header header header header header header"
+                         "nav nav main main main side side side"
+                         "footer footer footer footer footer footer footer footer";
+    height: 90vh;
+    padding: 10px;
+    width: 100%;
+    
+}
+.container>div{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+.item1{
+    grid-area: header;
+    background-color: aqua;
+    height: 50px;
+    width: 100%;
+    background-image: url(./heading\ background.jpg);    
+    color: white;
+    animation-name: heading;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    font-weight: bolder   ;
+}
+@keyframes heading {
+    from{color: white;}
+    to{color: red}
+}
+
+.item2{
+    grid-area: nav;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(./Background\ 1.jpg);
+    background-size: cover;
+    border: 5px solid green;
+    padding: 2px;
+    width:220px;
+}   
+
+.item3{    
+    grid-area: main;
+    border: 5px solid crimson;
+    background-color: white;
+    background-image: url(./Background\ 3.jpg);  
+    width: 800px;  
+    color: white;           
+}
+.procedure{
+    color: white;
+}
+
+.curd{
+     border: 5px dotted rgb(0, 220, 0);
+     
+}
+
+.item4{
+    display: flex;
+    flex-direction:column;
+    grid-area: side;
+    background-image: url(./Background\ 1.jpg);
+    background-size: cover;
+    width: 100%;
+    border: 5px solid green;
+    justify-content: top;
+    align-items: center;
+}
+
+.chef{
+    border: 5px solid black;    
+}
+.Food:hover{
+    height:  100px;
+    width: 50px;
+}
+.item5{
+    grid-area: footer;
+    background-color: pink;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite ;
+    animation-timing-function: ease-in;
+    color: green;
+    font-weight: bold;
+    border: 5px solid blue;
+    
+}
+@keyframes animation {
+    from{background-color: pink;}
+    to{background-color: yellow;}
+    }
+
+
+
+
